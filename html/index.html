@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Store</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/css.css" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- CART -->
+    <div class="cart">
+      <div class="cart__container">
+        <div class="cart__wrapper">
+          <div class="cart__close">
+            <i class="fas fa-times"></i>
+          </div>
+          <h3>Your Cart</h3>
+          <!-- <div class="cart__item">
+            <div class="cart__img">
+              <img src="/images/products/headphone/headphone1.jpeg" alt="" />
+            </div>
+            <div class="cart__desc">
+              <span>Headphone</span>
+              <p>$350</p>
+            </div>
+            <div class="cart__quantity">
+              <i class="fas fa-sort-up"></i>
+              <span>1</span>
+              <i class="fas fa-sort-down"></i>
+            </div>
+            <div class="cart__delete">
+              <i class="fas fa-trash-alt"></i>
+            </div>
+          </div> -->
+          <div class="cart__list"></div>
+          <div class="cart__total">
+            <span>Total: $0</span>
+            <button href="#">Clear Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CART -->
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="navigation">
+        <div class="navigation__container">
+          <div class="navigation__logo">
+            <a href="#">ITUNA</a>
+          </div>
+
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#">Home</a></li>
+            <li class="navigation__item"><a href="#">Category</a></li>
+            <li class="navigation__item"><a href="#">Blog</a></li>
+            <li class="navigation__item"><a href="#">Contact</a></li>
+          </ul>
+
+          <div class="navigation__icons">
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#" class="navigation__cart"
+              ><i class="fas fa-shopping-cart">
+                <span>0</span>
+              </i></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="slider__container">
+          <div class="slider__wrapper-item">
+            <div class="slider__dots">
+              <div class="slider__dot slider__dot--active"></div>
+              <div class="slider__dot"></div>
+            </div>
+
+            <div class="slider__arrow slider__arrow--left">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="slider__arrow slider__arrow--right">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="slider__items">
+              <div class="slider__item">
+                <div class="slider__desc">
+                  <span>New inspiration 2020</span>
+                  <h1>CELL PHONE TOP DEALS!</h1>
+                  <p>Trending from mobile and headphone style collection</p>
+                  <a href="#">SHOP NOW</a>
+                </div>
+
+                <div class="slider__img">
+                  <img src="/images/banner_01.png" alt="" />
+                </div>
+              </div>
+
+              <div class="slider__item">
+                <div class="slider__desc">
+                  <span>New inspiration 2020</span>
+                  <h1>CELL PHONE TOP DEALS!</h1>
+                  <p>Trending from mobile and headphone style collection</p>
+                  <a href="#">SHOP NOW</a>
+                </div>
+
+                <div class="slider__img">
+                  <img src="/images/banner_02.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- INTRODUCTION -->
+    <section class="introduction">
+      <div class="introduction__container">
+        <div class="introduction__headphone">
+          <div class="introduction__img">
+            <img src="/images/collection_02.png" alt="" style="width: 75%" />
+          </div>
+          <div class="introduction__desc">
+            <span>New Colors Introduced</span>
+            <h3>HEADPHONES</h3>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </div>
+
+        <div class="introduction__phone">
+          <div class="introduction__img">
+            <img src="/images/collection_01.png" alt="" style="width: 61.5%" />
+          </div>
+          <div class="introduction__desc">
+            <span>New Colors Introduced</span>
+            <h3>HEADPHONES</h3>
+            <a href="#">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END INTRODUCTION -->
+
+    <!-- PRODUCT -->
+    <section class="product">
+      <div class="product__container">
+        <div class="product__filter">
+          <div class="product__type product__type--active">
+            <div class="product__dot"></div>
+            <div class="product__text">All Products</div>
+          </div>
+          <div class="product__type">
+            <div class="product__dot"></div>
+            <div class="product__text">Trending Products</div>
+          </div>
+          <div class="product__type">
+            <div class="product__dot"></div>
+            <div class="product__text">Special Products</div>
+          </div>
+          <div class="product__type">
+            <div class="product__dot"></div>
+            <div class="product__text">Featured Products</div>
+          </div>
+        </div>
+
+        <div class="product__list">
+          <div class="product__item" data-category="trending">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/sumsung/samsung5.jpeg" alt="" />
+                <div class="product__quickview">
+                  <button>Quick View</button>
+                </div>
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="product__item" data-category="special">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/sumsung/samsung3.jpeg" alt="" />
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="product__item" data-category="featured">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/sumsung/samsung2.jpeg" alt="" />
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/sumsung/samsung1.jpeg" alt="" />
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/iPhone/iphone1.jpeg" alt="" />
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/iPhone/iphone2.jpeg" alt="" />
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/iPhone/iphone3.jpeg" alt="" />
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/iPhone/iphone4.jpeg" alt="" />
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/headphone/headphone10.jpeg" alt="" />
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/headphone/headphone6.jpeg" alt="" />
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/headphone/headphone3.jpeg" alt="" />
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="product__item">
+            <div class="product__card">
+              <div class="product__img">
+                <img src="/images/products/headphone/headphone1.jpeg" alt="" />
+              </div>
+              <div class="product__desc">
+                <span>Apple iPhone 11</span>
+                <div class="product__stars">
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                  <span>&bigstar;</span>
+                </div>
+                <div class="product__price">$760</div>
+              </div>
+              <a class="product__btn">ADD TO CART</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END PRODUCT -->
+
+    <!-- GOOGLE MAP -->
+    <section class="google">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.4254382438785!2d105.97681691479069!3d9.558545193154677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a04d7d42a7ba31%3A0x31b5f06af0233f72!2zMTIwIMSQxrDhu51uZyBBbiBExrDGoW5nIFbGsMahbmcsIFRULiBN4bu5IFh1ecOqbiwgTeG7uSBYdXnDqm4sIFPDs2MgVHLEg25n!5e0!3m2!1sen!2s!4v1601115681709!5m2!1sen!2s"
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </section>
+    <!-- END GOOGLE MAP -->
+
+    <!-- FOOTER -->
+    <footer></footer>
+    <!-- END FOOTER -->
+    <script src="/js/app.js"></script>
+  </body>
+</html>
